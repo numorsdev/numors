@@ -1096,10 +1096,10 @@ img.nav-icon {
   display: none;
 }
 
-[page-status="active"] a > img {
+li.active-page a > img {
   display: none;
 }
-[page-status="active"] a > img + img {
+li.active-page a > img + img {
   display: block;
 }
 
