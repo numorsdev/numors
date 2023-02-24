@@ -1143,14 +1143,4 @@ body::-webkit-scrollbar-thumb {
   background-color: hsl(0, 0%, 67%);
 }
 
-.barba-once-active {
-  transition: opacity 1s linear;
-}
 
-.barba-once {
-  opacity: 0;
-}
-
-.barba-once-to {
-  opacity: 1;
-}
