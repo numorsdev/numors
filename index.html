@@ -229,6 +229,15 @@
   </nav>
   <script src="/code/fw.js"></script>
   <script src="/code/numors.js"></script>
+  <script>
+    if (sec_attr == sec_attr_arr[0]) {
+      nav_items.forEach((i) => {
+        if (i.querySelector("a>img").alt == img_attr_arr[0]) {
+          i.classList.add("active-page");
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
