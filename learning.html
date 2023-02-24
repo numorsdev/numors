@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Learning Numors</title>
+  <meta name="description"
+    content="An amazing content library created by professionals all around the world. Here you can explore amazing ideas, learn new skills and pick the right products." />
+  <link rel="stylesheet" href="/code/numors.css" />
+  <link rel="icon" href="/image/favicon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" type="image/png" href="/image/icon-48x48.png" />
+  <link rel="apple-touch-icon" href="/image/icon-128x128.png" />
+</head>
+
+<body section="wrapper">
+  <div section="container">
+    <header>
+      <div class="page-header">
+        <a href="#">
+          <img src="/image/in.svg" class="flag" alt="" />
+        </a>
+        <h1 class="animate-charcter">numors</h1>
+        <form class="search" method="get" action="#"
+          onsubmit="location.href='/search?q=' + document.getElementById('myInput').value; return false;">
+          <input autocomplete="off" id="myInput" type="text" name="q" class="searchTerm"
+            placeholder="What are you looking for?" />
+          <button type="submit" class="searchButton"><img src="/image/search.svg" class="search-icon" /></button>
+        </form>
+      </div>
+    </header>
+    <main>
+      Learning Numors
+    </main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
+  </div>
+  <footer>
+    <div class="footer-links">
+      <a href="/about" class="footer-link">About</a>
+      <a href="/contact" class="footer-link">Contact</a>
+      <a href="/topics" class="footer-link">Topics</a>
+      <a href="/experts" class="footer-link">Experts</a>
+      <a href="/community" class="footer-link">Community</a>
+      <a href="/ads" class="footer-link">Advertise</a>
+      <a href="/careers" class="footer-link">Careers</a>
+      <a href="/help" class="footer-link">Help</a>
+      <a href="/privacy" class="footer-link">Privacy</a>
+      <a href="/terms" class="footer-link">Terms</a>
+      <p class="copyright">&copy; <span class="year">YYYY</span> Numors Technologies Pvt. Ltd.</p>
+    </div>
+  </footer>
+  <nav>
+    <ul class="nav-bar">
+      <li class="nav-item">
+        <a href="/">
+          <img src="/image/home.svg" alt="Home" class="nav-icon" />
+          <img src="/image/home (1).svg" alt="Home" class="nav-icon" />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/explore.html">
+          <img src="/image/bulb.svg" alt="Explore" class="nav-icon" />
+          <img src="/image/bulb (1).svg" alt="Explore" class="nav-icon" />
+        </a>
+      </li>
+      <li class="nav-item" page-status="active">
+        <a href="/learning.html">
+          <img src="/image/bulb.svg" alt="Learning" class="nav-icon" />
+          <img src="/image/bulb (1).svg" alt="Learning" class="nav-icon" />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/marketplace.html">
+          <img src="/image/shopping-cart.svg" alt="Marketplace" class="nav-icon" />
+          <img src="/image/shopping-cart (1).svg" alt="Marketplace" class="nav-icon" />
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/account.html">
+          <img src="/image/user.svg" alt="Account" class="nav-icon" />
+          <img src="/image/user (1).svg" alt="Account" class="nav-icon" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <script src="/code/numors.js"></script>
+</body>
+
+</html>
