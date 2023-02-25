@@ -181,10 +181,10 @@ footer {
 }
 
 .category {
-  flex: 1 1 13rem;
+  flex: 1 1 9rem;
   text-align: center;
   position: relative;
-  max-width: 20rem;
+  max-width: 10rem;
 }
 
 .category img {
