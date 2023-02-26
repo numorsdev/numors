@@ -12,3 +12,26 @@ nav_items.forEach((i) => {
     i.classList.add("active-page");
   });
 });
+
+//*****   code for auto detection ******//
+
+// for explore page
+
+if (sec_attr == "e") {
+  console.log("explore page detected");
+  nav_items.forEach((i) => {
+    if (i.querySelector("a>img").alt == "Explore") {
+      i.classList.add("active-page");
+    }
+  });
+}
+
+// for marketplace page
+
+if (sec_attr == "m") {
+  nav_items.forEach((i) => {
+    if (i.querySelector("a>img").alt == "Marketplace") {
+      i.classList.add("active-page");
+    }
+  });
+}
