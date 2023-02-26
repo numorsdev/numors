@@ -2,6 +2,8 @@ const nav_items = document.querySelectorAll(".nav-item");
 const section = document.querySelector("[section='content']");
 const sec_attr = section.getAttribute("section-id");
 
+//*****   code for icons when clicked ******//
+
 // const check = (li) => {
 //   if (li.classList.contains("active-page")) li.classList.remove("active-page");
 // };
@@ -15,53 +17,18 @@ const sec_attr = section.getAttribute("section-id");
 
 //*****   code for auto detection ******//
 
-// for home page
+const changeIcon = (sec_attr_, img_attr) => {
+  if (sec_attr == sec_attr_) {
+    nav_items.forEach((i) => {
+      if (i.querySelector("a>img").alt == img_attr) {
+        i.classList.add("active-page");
+      }
+    });
+  }
+};
 
-if (sec_attr == "h") {
-  nav_items.forEach((i) => {
-    if (i.querySelector("a>img").alt == "Home") {
-      i.classList.add("active-page");
-    }
-  });
-}
-
-// for explore page
-
-if (sec_attr == "e") {
-  console.log("explore page detected");
-  nav_items.forEach((i) => {
-    if (i.querySelector("a>img").alt == "Explore") {
-      i.classList.add("active-page");
-    }
-  });
-}
-
-// for marketplace page
-
-if (sec_attr == "m") {
-  nav_items.forEach((i) => {
-    if (i.querySelector("a>img").alt == "Marketplace") {
-      i.classList.add("active-page");
-    }
-  });
-}
-
-// for account page
-
-if (sec_attr == "a") {
-  nav_items.forEach((i) => {
-    if (i.querySelector("a>img").alt == "Account") {
-      i.classList.add("active-page");
-    }
-  });
-}
-
-// learning page
-
-if (sec_attr == "l") {
-  nav_items.forEach((i) => {
-    if (i.querySelector("a>img").alt == "Learning") {
-      i.classList.add("active-page");
-    }
-  });
-}
+changeIcon("h", "Home");
+changeIcon("e", "Explore");
+changeIcon("m", "Marketplace");
+changeIcon("a", "Account");
+changeIcon("l", "Learning");
